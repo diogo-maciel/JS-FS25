@@ -5,6 +5,8 @@
  * node.removeChild -> remover um filho do elemento
  * document.getElementById -> buscar o elemento com o id específico
  * node.innerText -> Escrever texto no elemento selecionado
+ * document.getElementsByClassName
+ * document.getElementsByTagName
  */
 
 const paragrafo1 = document.createElement("p");
@@ -44,5 +46,9 @@ valor1.appendChild(valor4);
 valor4.innerText = "Nome";
 valor1.removeChild(valor2);
 
+
+const paragrafos = documentos.getElementsByTagName("p");
+const paragrafo = document.querySelector("#p")
+console.log(paragrafos, paragrafo);
 
 
